@@ -9,9 +9,9 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"]
+  origin: ["http://localhost:5173", "https://fancy-meerkat-c83eb4.netlify.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 app.use(express.json());
 
