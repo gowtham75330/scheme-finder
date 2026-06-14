@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {   // 🔥 THIS IS CORRECT
-        target: "http://localhost:5000",
+        target: "https://scheme-finder-6.onrender.com",
         changeOrigin: true,
         secure: false
       }
